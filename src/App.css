@@ -1,0 +1,38 @@
+.App {
+  text-align: center; /* Tüm sayfanın ortalanmasını sağlıyorum */
+}
+
+.App-logo {
+  height: 40vmin; /* Logonun boyutunu görünüm yüksekliğine göre ayarlıyorum */
+  pointer-events: none; /* Logoya tıklamayı devre dışı bırakıyorum */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear; /* Animasyonu belirli durumlarda devreye sokuyorum */
+  }
+}
+
+.App-header {
+  background-color: #282c34; /* Başlık arka plan rengini koyu yapıyorum */
+  min-height: 100vh; /* Sayfanın minimum yüksekliğini ayarlıyorum */
+  display: flex; /* Flexbox ile öğeleri hizalıyorum */
+  flex-direction: column; /* Öğeleri dikey hizalıyorum */
+  align-items: center; /* Öğeleri yatayda ortalıyorum */
+  justify-content: center; /* Öğeleri dikeyde ortalıyorum */
+  font-size: calc(10px + 2vmin); /* Yazı boyutunu ekran boyutuna göre ayarlıyorum */
+  color: white; /* Yazı rengini beyaz yapıyorum */
+}
+
+.App-link {
+  color: #61dafb; /* Linklerin rengini mavi tonuna ayarlıyorum */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); /* Animasyon başlangıç açısını ayarlıyorum */
+  }
+  to {
+    transform: rotate(360deg); /* Animasyon bitiş açısını ayarlıyorum */
+  }
+}
